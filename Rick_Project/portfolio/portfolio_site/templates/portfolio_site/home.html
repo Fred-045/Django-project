@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Use the static tag to link to the CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body style="background-color: rgb(224, 231, 233);">
+    <header>
+        <nav>
+            <ul style="font-size: x-large;">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#">About</a></li>
+            
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        
+      <div class="Portfolio">
+        <div id="taglineDiv" style="padding-left: 550px;">
+            <img src="https://t3.ftcdn.net/jpg/02/84/61/00/360_F_284610055_6SdCJkTFYvJ4oMicMJiqYn92mJmPVxQR.jpg " width="60" height="50" alt="Rick webpage">
+
+            
+    
+
+            <h1 style="color: white;">Welcome to My Portfolio</h1>
+            <h2 >  creative and inovative Developer & Designer </h2>
+             <p>Turning big ideas into world of reality through design and implementing</p>
+             
+          
+
+             
+             
+        </div>
+        <div id="skillsDiv" style="padding: 100px; padding-left: 400px; font-size: x-large;"  >
+
+            <ul class="skills">
+                <h1 style="color: rgb(41, 52, 202);"><li class="list-group-item active" aria-current="true">My skills</li></h1>
+                   
+
+
+                
+              <li class="list-group-item">
+                
+                Programming(Python)
+              </li>
+              
+              <li class="list-group-item">
+                
+                Proficient in Database
+              </li>
+              
+              <li class="list-group-item">
+               
+                Graphic design
+              </li>
+              
+              <li class="list-group-item">
+                
+                Web development
+              </li>
+                
+
+
+        </div>
+        <div id="hobyDiv" style="padding: 100px; padding-left: 400px; font-size: x-large;" >
+
+        <ul class="My Hobies">
+            
+            <h1 style="color: rgb(41, 52, 202);"><li class="list-group-item active" aria-current="true">My Hobies</li></h1>
+
+            <li class="list-group-item">
+               
+                Reading Novels
+              </li>
+              <li class="list-group-item">
+                
+                Playing Computer Game
+              </li>
+            
+              <li class="list-group-item">Playing Footbal
+              </li>
+              <li class="list-group-item">
+                
+                Watching Cenema
+              </li>
+            
+          </ul>
+        </div>
+        <div id="footerDiv" style="padding: 100px; padding-left: 500px ; font-size: large;">
+           <h1 style="color: blue;"> Follow me in social media pages</h1>
+
+            
+           <p>
+            <a href="https://www.instagram.com/rick_mwangi_43/profilecard/?igsh=MTI4MHBjdXdzbmRyeg==" class="link-underline-primary">
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AInstagram_logo_2022.svg&psig=AOvVaw3ngHZunOkBm4qSk4J2Xlj7&ust=1731763000239000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCV54S23okDFQAAAAAdAAAAABAE" alt="Link Image" style="width: 60px; height: 60px; margin-right: 50px;">
+            </a>
+            Instagram
+          </p>
+          
+          
+          <p>
+            <a href="https://www.youtube.com/@FrederickMwangi-gc9zv" class="link-underline-primary">
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F3146788%2Fyoutube_logo_icon&psig=AOvVaw3vLuyylby52BDwhQVA2gSu&ust=1731763065997000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPidhqa23okDFQAAAAAdAAAAABAE" alt="Link Image" style="width: 60px; height: 60px; margin-right: 50px;">
+            </a>
+            youtube
+          </p>
+          <p>
+            <a href="https://vm.tiktok.com/ZMh5ySWek/" class="link-underline-primary">
+             <img src="templates/tk.png" alt="Link Image" style="width: 60px; height: 60px; margin-right: 50px;">
+            </a>
+            Tiktok
+          </p>
+          <p>
+            <a href="https://www.facebook.com/rick.mwangi43" class="link-underline-primary">
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AFacebook_logo_%2528square%2529.png&psig=AOvVaw1G41CMlwV4nxrmtDJaAt14&ust=1731763105173000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJC3xbe23okDFQAAAAAdAAAAABAE" alt="Link Image" style="width: 60px; height: 60px; margin-right: 50px;">
+            </a>
+            Facebook
+          </p>
+          <h5 > <img src="templates/ml.png"  style="width: 60px; height: 60px;"> Email</h5<br>
+
+            <h6>mwangifrederick773@gmail.com</h6>
+           
+
+        </div>
+
+
+    </div>
+</div>
+</body>
+      </div>
+        
+    </section>
+</body>
+</html>

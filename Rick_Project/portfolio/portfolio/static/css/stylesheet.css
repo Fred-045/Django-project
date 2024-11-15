@@ -1,0 +1,137 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    transition: background-color 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header nav ul li a {
+        padding: 1rem;
+        width: 100%; /* Full width for mobile navigation */
+        text-align: center;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    /* Form input styles for mobile */
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #575757;
+    }
+}
+
+/* For tablets and small desktops (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    form input,
+    form textarea {
+        width: 48%; /* Allow inputs to be side by side on medium screens */
+        margin: 0.5rem 1%;
+    }
+
+    button[type="submit"] {
+        width: 48%;
+        margin: 0.5rem 1%;
+    }
+}
+
+/* Larger screens: Desktop (1024px and above) */
+@media (min-width: 1024px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section {
+        padding: 2rem;
+        margin: 0 auto;
+        width: 80%; /* Make content centered with some margin on the sides */
+    }
+
+    form input,
+    form textarea {
+        width: 60%; /* Form inputs should be wider on larger screens */
+        margin: 1rem auto;
+    }
+
+    button[type="submit"] {
+        width: 60%;
+        margin: 1rem auto;
+    }
+}
